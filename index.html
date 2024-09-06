@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategy Layout</title>
+    <link rel="stylesheet" href="styles.css">
+<style> 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3e6e6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.player-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.player-images img {
+    width: 50px;
+    margin: 0 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #6a5acd;
+    color: white;
+}
+
+td ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+td ul li {
+    margin-bottom: 5px;
+}
+
+a {
+    color: #6a5acd;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.player-info img {
+    width: 50px;
+    height: auto;
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Strategy</h1>
+        <div class="player-info">
+            <h2>Player 1 - <a href="#">POV Video</a></h2>
+            <div class="player-images">
+                <img src="farm.png" alt="Farm">
+                <img src="worker.png" alt="Worker">
+                <img src="soldier1.png" alt="Soldier">
+                <img src="soldier2.png" alt="Soldier">
+            </div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Waves</th>
+                    <th>Strategy</th>
+                    <th>Placement Map</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Notes</td>
+                    <td>
+                        <ul>
+                            <li>Skip waves 1-23 & 25 as soon as possible, all other skips are optional.</li>
+                        </ul>
+                    </td>
+                    <td rowspan="3">
+                        <img src="placement-map.png" alt="Placement Map">
+                    </td>
+                </tr>
+                <tr>
+                    <td>0 - 26</td>
+                    <td>
+                        <ul>
+                            <li>Place 3 Lvl 1 <strong>Farms</strong>, 1 by 1</li>
+                            <li>Upgrade 1 <strong>Farm</strong> → Lvl 2</li>
+                            <li>Place 2 Lvl 1 <strong>Trappers</strong></li>
+                            <li>Get 8 Lvl 2 <strong>Farms</strong> (Lvl 2 farms > Lvl 1 farms)</li>
+                            <li>Place 3 Lvl 1 <strong>Freezers</strong></li>
+                            <li>Place 2 Lvl 2 <strong>Rocketeers</strong></li>
+                            <li>Upgrade all <strong>Farms</strong> → Lvl 3</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>27 - 50</td>
+                    <td>
+                        <ul>
+                            <li>Place 7 Lvl 2 <strong>Rangers</strong>, 1 by 1</li>
+                            <li>Get 8 Lvl 3 <strong>Rocketeers</strong> → 7 Lvl 3 <strong>Rangers</strong></li>
+                            <li>Max all <strong>Rocketeers</strong> → <strong>Rangers</strong></li>
+                            <li>Get 4 Max <strong>Freezers</strong>, set on <strong>Strongest</strong></li>
+                            <li>Spam Max <strong>Trappers</strong>, set on <strong>Bear Traps</strong></li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
